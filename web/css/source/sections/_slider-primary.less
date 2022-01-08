@@ -6,6 +6,20 @@
 
     .slider-primary {
 
+        &__heading {
+            text-align: center;
+            color: #ffffff;
+            font-size: 35px;
+            text-shadow: 1px 1px 10px #000000;
+        }
+
+        &__text {
+            text-align: center;
+            color: #ffffff;
+            font-size: 25px;
+            text-shadow: 1px 1px 10px #000000;
+        }
+
         .slick-dots {
             bottom: 10px;
             padding: 0;
@@ -58,6 +72,14 @@
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 
     .slider-primary {
+
+        &__heading {
+            font-size: 52px;
+        }
+
+        &__text {
+            font-size: 26px;
+        }
 
         .slick-dots {
 

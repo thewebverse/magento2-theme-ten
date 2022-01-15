@@ -1,0 +1,92 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .materials {
+
+        &__heading {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__caption {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-left: -15px;
+            display: block;
+        }
+
+        a, .alink {
+            color: #3d3d3d;
+        }
+
+        [data-content-type="image"] {
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-right: 15px;
+
+            &:hover {
+
+                img {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+
+            }
+
+            img {
+                width: 100%;
+                transition: 0.5s;
+            }
+
+        }
+
+        .slick-prev {
+            left: -80px;
+        }
+
+        .slick-next {
+            right: -65px;
+        }
+
+        .slick-prev, .slick-next {
+            background: transparent;
+            top: calc(~'50% - 20px');
+
+            &:before {
+                font-size: 25px;
+            }
+
+        }
+
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .materials {
+
+    }
+
+}

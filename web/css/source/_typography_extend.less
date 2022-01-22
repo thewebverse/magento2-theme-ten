@@ -1,0 +1,71 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+.lib-font-family(@_font-family, @_font-weight) {
+    font-family: '@{_font-family}-@{_font-weight}';
+}
+
+.lib-font-family(@_font-family) {
+    font-family: '@{_font-family}-400';
+}
+
+& when (@media-common = true) {
+    //Roboto Font
+    .lib-font-face(
+        @family-name: 'Roboto-300',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Light',
+        @font-weight: 300,
+        @font-style: normal,
+        @font-display: swap
+    );
+    .lib-font-face(
+        @family-name: 'Roboto-400',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Regular',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+    .lib-font-face(
+        @family-name: 'Roboto-500',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Medium',
+        @font-weight: 500,
+        @font-style: normal,
+        @font-display: swap
+    );
+    .lib-font-face(
+        @family-name: 'Roboto-700',
+        @font-path: '@{baseDir}fonts/Roboto/Roboto-Bold',
+        @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+    //PlayfairDisplay Font
+    .lib-font-face(
+        @family-name: 'PlayfairDisplay-400',
+        @font-path: '@{baseDir}fonts/PlayfairDisplay/PlayfairDisplay-Regular',
+        @font-weight: 400,
+        @font-style: normal,
+        @font-display: swap
+    );
+    .lib-font-face(
+        @family-name: 'PlayfairDisplay-500',
+        @font-path: '@{baseDir}fonts/PlayfairDisplay/PlayfairDisplay-Medium',
+        @font-weight: 500,
+        @font-style: normal,
+        @font-display: swap
+    );
+    .lib-font-face(
+        @family-name: 'PlayfairDisplay-700',
+        @font-path: '@{baseDir}fonts/PlayfairDisplay/PlayfairDisplay-Bold',
+        @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+}
+

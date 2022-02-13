@@ -1,0 +1,38 @@
+//
+//  Progress Bar
+//  _____________________________________________
+
+
+.lib-progress-bar (
+    @_progress-bar-fill: @progress-bar-fill,
+    @_progress-bar-background: @progress-bar-background,
+    @_progress-bar-width: @progress-bar-width
+)
+{
+    width: 100%;
+    height: 20px;
+    background: @_progress-bar-background;
+    position: relative;
+
+    &:before {
+        content: '@{_progress-bar-width}';
+        position: absolute;
+        color: white;
+        top: 0;
+        left: 15px;
+        z-index: 1;
+    }
+
+    &:after {
+        height: 20px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: @_progress-bar-width;
+        background: @_progress-bar-fill;
+    }
+}
+
+
+

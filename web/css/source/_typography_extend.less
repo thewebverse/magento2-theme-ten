@@ -3,6 +3,8 @@
 //  * See COPYING.txt for license details.
 //  */
 
+@root__font-size: 62.5%; // Defines ratio between root font size and base font size, 1rem = 10px
+
 //
 //  Common
 //  _____________________________________________
@@ -64,6 +66,14 @@
         @family-name: 'PlayfairDisplay-700',
         @font-path: '@{baseDir}fonts/PlayfairDisplay/PlayfairDisplay-Bold',
         @font-weight: 700,
+        @font-style: normal,
+        @font-display: swap
+    );
+    //Icons
+    .lib-font-face(
+        @family-name: 'Ten-Theme-Icons',
+        @font-path: '@{baseDir}fonts/Ten-Icons/fonts/Ten-Theme-Icons',
+        @font-weight: 300,
         @font-style: normal,
         @font-display: swap
     );

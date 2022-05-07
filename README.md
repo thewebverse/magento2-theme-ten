@@ -12,4 +12,4 @@
 
 <hr />
 
-Check the youtube playlist here: https://www.youtube.com/watch?v=QPghCxs8mok&list=PLApOdfTXH6_4eEPADeweIZGte_rxzydV8
+Check the youtube videos here: https://www.youtube.com/c/Webverse/videos

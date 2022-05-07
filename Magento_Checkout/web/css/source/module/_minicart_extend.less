@@ -1,0 +1,25 @@
+& when (@media-common = true) {
+    .minicart-wrapper {
+        .lib-dropdown(
+            @_toggle-selector: ~'.action.showcart',
+            @_options-selector: ~'.block-minicart',
+            @_dropdown-list-width: 320px,
+            @_dropdown-list-position-right: -10px,
+            @_dropdown-list-pointer-position: right,
+            @_dropdown-list-pointer-position-left-right: 12px,
+            @_dropdown-list-z-index: 101,
+            @_icon-font: 'Ten-Theme-Icons',
+            @_dropdown-toggle-icon-content: "\e900",
+            @_dropdown-toggle-active-icon-content: "\e900",
+            @_dropdown-list-item-padding: false,
+            @_dropdown-list-item-hover: false,
+            @_icon-font-position: before,
+            @_icon-font-size: 22px,
+            @_icon-font-line-height: 28px,
+            @_icon-font-color: @minicart-icons-color,
+            @_icon-font-color-hover: @minicart-icons-color-hover,
+            @_icon-font-color-active: @minicart-icons-color
+        );
+        float: right;
+    }
+}

@@ -1,8 +1,7 @@
 & when (@media-common = true) {
-
-    .icon {
+    [class^="icon--"], [class*=" icon--"] {
         /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: 'Ten-Theme-Icons' !important;
+        font-family: 'Ten-Theme' !important;
         speak: never;
         font-style: normal;
         font-weight: normal;
@@ -15,8 +14,10 @@
         -moz-osx-font-smoothing: grayscale;
     }
 
-    .icon-shopping-cart:before {
+    .icon--shopping-cart:before {
         content: "\e900";
     }
-
+    .icon--user-star:before {
+        content: "\e901";
+    }
 }

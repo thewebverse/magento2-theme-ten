@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'Ten-Theme-Icons';
-  src:  url('fonts/Ten-Theme-Icons.eot?cf3por');
-  src:  url('fonts/Ten-Theme-Icons.eot?cf3por#iefix') format('embedded-opentype'),
-    url('fonts/Ten-Theme-Icons.ttf?cf3por') format('truetype'),
-    url('fonts/Ten-Theme-Icons.woff?cf3por') format('woff'),
-    url('fonts/Ten-Theme-Icons.svg?cf3por#Ten-Theme-Icons') format('svg');
+  font-family: 'Ten-Theme';
+  src:  url('fonts/Ten-Theme.eot?ehyesc');
+  src:  url('fonts/Ten-Theme.eot?ehyesc#iefix') format('embedded-opentype'),
+    url('fonts/Ten-Theme.ttf?ehyesc') format('truetype'),
+    url('fonts/Ten-Theme.woff?ehyesc') format('woff'),
+    url('fonts/Ten-Theme.svg?ehyesc#Ten-Theme') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon--"], [class*=" icon--"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Ten-Theme-Icons' !important;
+  font-family: 'Ten-Theme' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shopping-cart:before {
+.icon--user-star:before {
+  content: "\e901";
+}
+.icon--shopping-cart:before {
   content: "\e900";
 }
